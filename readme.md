@@ -1,4 +1,4 @@
-# Symfony 7 + Vue 3 + Vite + Tailwind + Vuetify
+# Symfony 7 | Nuxt 3 | Vue 3 | Vite | Tailwind | Vuetify
 
 ## Project setup
 
@@ -7,22 +7,16 @@ yarn install
 composer install
 ```
 
-### Starts the symfony server
-
-```
-symfony serve -d
-```
-
 ### Compiles and hot-reloads for development
 
 ```
-vite
+yarn dev
 ```
 
 ### Compiles and minifies for production
 
 ```
-vite build
+yarn build
 ```
 
 ### Notice
