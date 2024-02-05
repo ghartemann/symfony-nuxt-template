@@ -1,6 +1,3 @@
-import postcss from "postcss";
-import tailwindcss from "tailwindcss";
-
 export default defineNuxtConfig({
     app: {
         head: {
@@ -9,12 +6,13 @@ export default defineNuxtConfig({
                 {charset: 'utf-8'},
                 {name: 'viewport', content: 'width=device-width, initial-scale=1'}
             ]
-        }
+        },
     },
     ssr: true,
     telemetry: false,
     modules: [
-        '@nuxtjs/tailwindcss'
+        '@nuxtjs/tailwindcss',
+        '@pinia/nuxt',
     ],
     postcss: {
         plugins: {
@@ -24,4 +22,9 @@ export default defineNuxtConfig({
             autoprefixer: {},
         }
     },
+    edge: {
+        middleware: {
+            '/api': '~/middleware/api.js'
+        }
+    }
 });
