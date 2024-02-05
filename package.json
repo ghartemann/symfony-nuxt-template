@@ -2,18 +2,22 @@
     "type": "module",
     "private": true,
     "scripts": {
-        "dev": "vite",
-        "build": "vite build"
+        "dev": "nuxt dev",
+        "build": "nuxt build",
+        "postinstall": "nuxt prepare"
     },
     "devDependencies": {
         "vite": "^5.0",
-        "vite-plugin-symfony": "^6.3"
+        "vite-plugin-symfony": "^6.3",
+        "@nuxtjs/tailwindcss": "^6.11.3"
     },
     "dependencies": {
+        "@types/node": "^20.11.16",
         "@mdi/font": "^7.4.47",
         "@vitejs/plugin-vue": "^5.0.3",
         "autoprefixer": "^10.4.17",
         "axios": "^1.6.5",
+        "nuxt": "^3.10.0",
         "pinia": "^2.1.7",
         "postcss": "^8.4.33",
         "sass": "^1.70.0",
@@ -23,5 +27,8 @@
         "vue-axios": "^3.5.2",
         "vue-router": "^4.2.5",
         "vuetify": "^3.5.1"
+    },
+    "resolutions": {
+        "strip-ansi": "6.0.0"
     }
 }

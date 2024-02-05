@@ -1,0 +1,1 @@
+export { default } from "file:///C:/Users/ghartemann/Dev/symfony-nuxt-template/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
