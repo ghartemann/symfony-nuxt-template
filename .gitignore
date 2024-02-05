@@ -6,7 +6,7 @@
 /vendor/
 
 /node_modules/
-
+/.nuxt
 /public/build/
 npm-debug.log
 yarn-error.log
